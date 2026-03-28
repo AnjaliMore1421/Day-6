@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Delegation Example</title>
+  <style>
+    ul { list-style-type: none; padding: 0; }
+    li { padding: 10px; border: 1px solid #ccc; margin: 5px 0; cursor: pointer; }
+    li.done { text-decoration: line-through; color: gray; }
+    .delete-btn { margin-left: 10px; color: red; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>My Todo List</h2>
+  <input type="text" id="todoInput" placeholder="Add a task">
+  <button id="addBtn">Add</button>
+  <ul id="todoList">
+    <li>Learn JavaScript <span class="delete-btn">✖</span></li>
+    <li>Practice CSS <span class="delete-btn">✖</span></li>
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
