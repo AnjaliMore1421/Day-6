@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Notes App</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f1f3f6;
+margin:0;
+padding:30px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+.controls{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+textarea{
+flex:1;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+height:70px;
+resize:none;
+}
+
+button{
+padding:10px 15px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.add{
+background:#4CAF50;
+color:white;
+}
+
+.search{
+width:100%;
+padding:10px;
+margin-bottom:20px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.notes{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+gap:15px;
+}
+
+.note{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+position:relative;
+}
+
+.note p{
+margin-bottom:10px;
+}
+
+.actions{
+display:flex;
+gap:5px;
+}
+
+.edit{
+background:#2196F3;
+color:white;
+}
+
+.delete{
+background:#f44336;
+color:white;
+}
+
+.pin{
+background:#ff9800;
+color:white;
+}
+
+.pinned{
+border:2px solid orange;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Notes App</h1>
+
+<div class="controls">
+<textarea id="noteInput" placeholder="Write your note..."></textarea>
+<button class="add" id="addNote">Add</button>
+</div>
+
+<input type="text" id="searchInput" class="search" placeholder="Search notes...">
+
+<div class="notes" id="notesContainer"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
